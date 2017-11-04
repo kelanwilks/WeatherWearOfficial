@@ -18,10 +18,11 @@ public class WeatherWear extends AppCompatActivity {
     }
 
     public void goToWeatherPage(View v) {
-        setContentView(R.layout.activity_realtime_weather_first_page);
+        startActivity(new Intent(this,realtimeWeather_First_page.class));
     }
 
     public void goToBackPage(View v) {
-        setContentView(R.layout.activity_realtime_weather_first_page);
+        startActivity(new Intent(this,realtimeWeather_First_page.class));
+        //setContentView(R.layout.activity_realtime_weather_first_page);
     }
 }

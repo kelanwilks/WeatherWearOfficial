@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kelan.weatherwear.WeatherWear">
+    tools:context="com.example.kelan.weatherwear.realtimeWeather_First_page">
 
     <Button
         android:id="@+id/goFind"
@@ -14,6 +14,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="goToformal"
         android:text="Go! Find Me Clothes!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
