@@ -27,7 +27,7 @@ public class accountSettings extends AppCompatActivity {
     public void goBack(View v) {
         startActivity(new Intent(this, WeatherWear.class));}
 
-    public void btnSaveLoadout(View v) {
+    public void btnSaveLoadoutmenu(View v) {
 
         Button btn = (Button) findViewById(R.id.save);
 
