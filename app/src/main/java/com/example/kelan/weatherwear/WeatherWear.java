@@ -28,8 +28,11 @@ public class WeatherWear extends AppCompatActivity {
     }
 
     public void goToAccount(View v) {
-
         startActivity(new Intent(this,accountSettings.class));
+    }
+
+    public void goToOutfits(View v) {
+        startActivity(new Intent(this,savedOutfits.class));
     }
 
     public void goToCalendar(View v){
