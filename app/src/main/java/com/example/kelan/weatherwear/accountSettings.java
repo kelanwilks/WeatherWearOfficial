@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -24,7 +25,14 @@ public class accountSettings extends AppCompatActivity {
     }
 
     public void goBack(View v) {
-        startActivity(new Intent(this, WeatherWear.class));
+        startActivity(new Intent(this, WeatherWear.class));}
+
+    public void btnSaveLoadout(View v) {
+
+        Button btn = (Button) findViewById(R.id.save);
+
+        Toast.makeText(this, "Outfit Saved!",Toast.LENGTH_LONG).show();
     }
+
 
 }
