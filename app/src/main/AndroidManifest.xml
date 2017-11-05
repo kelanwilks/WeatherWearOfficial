@@ -21,6 +21,7 @@
         <activity android:name="com.example.kelan.weatherwear.WeatherWear"></activity>
         <activity android:name="com.example.kelan.weatherwear.clothesInformal"></activity>
         <activity android:name="com.example.kelan.weatherwear.clothesCasual"></activity>
+        <activity android:name="com.example.kelan.weatherwear.accountSettings"></activity>
 
     </application>
 

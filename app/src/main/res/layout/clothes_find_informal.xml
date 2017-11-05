@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.kelan.weatherwear.clothesInformal">
 
-    <ImageView
+    <Button
         android:id="@+id/bootsBuy"
         android:layout_width="25dp"
         android:layout_height="21dp"
@@ -15,15 +15,16 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/button_shoppingcart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.791"
-        app:srcCompat="@drawable/Button_shoppingCart" />
+        app:srcCompat="@drawable/button_shoppingcart" />
 
-    <ImageView
+    <Button
         android:id="@+id/socksBuy"
         android:layout_width="25dp"
         android:layout_height="21dp"
@@ -31,15 +32,16 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/button_shoppingcart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.791"
-        app:srcCompat="@drawable/Button_shoppingCart" />
+        app:srcCompat="@drawable/button_shoppingcart" />
 
-    <ImageView
+    <Button
         android:id="@+id/beltBuy"
         android:layout_width="25dp"
         android:layout_height="21dp"
@@ -47,15 +49,16 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/button_shoppingcart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.791"
-        app:srcCompat="@drawable/Button_shoppingCart" />
+        app:srcCompat="@drawable/button_shoppingcart" />
 
-    <ImageView
+    <Button
         android:id="@+id/shirtBuy"
         android:layout_width="33dp"
         android:layout_height="27dp"
@@ -63,13 +66,14 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/button_shoppingcart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.51"
-        app:srcCompat="@drawable/Button_shoppingCart" />
+        app:srcCompat="@drawable/button_shoppingcart" />
 
     <Button
         android:id="@+id/randomize"
@@ -218,7 +222,7 @@
         app:layout_constraintVertical_bias="0.045"
         app:srcCompat="@drawable/informal_header" />
 
-    <ImageView
+    <Button
         android:id="@+id/pantsBuy"
         android:layout_width="33dp"
         android:layout_height="27dp"
@@ -226,12 +230,14 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/button_shoppingcart"
+        android:onClick="hyperLinkOnClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.51"
-        app:srcCompat="@drawable/Button_shoppingCart" />
+        app:srcCompat="@drawable/button_shoppingcart" />
 
 </android.support.constraint.ConstraintLayout>

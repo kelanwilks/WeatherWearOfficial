@@ -14,39 +14,49 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class realtimeWeather_First_page extends AppCompatActivity {
     RadioGroup rg;
     RadioButton rb;
-    TextView tv;
-    String idtemp;
+    RadioButton temp;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_realtime_weather_first_page);
         rg = (RadioGroup) findViewById(R.id.typeClothesTest);
+        temp = (RadioButton) findViewById(R.id.informal);
     }
 
     public void radioOnClick(View v) {
         int radioButtonid = rg.getCheckedRadioButtonId();
         rb = (RadioButton) findViewById(radioButtonid);
-      //  idtemp = rb.toString();
-       // tv.setText(idtemp);
 
+        if(rb.getText().charAt(0) == 'F') {
+            i = 1;
+        }
+        else if(rb.getText().charAt(0) == 'I') {
+            i = 2;
+        }
+        else if(rb.getText().charAt(0) == 'B') {
+            i = 3;
+        }
         Toast.makeText(getBaseContext(), rb.getText(), Toast.LENGTH_SHORT).show();
     }
 
     public void goToInformal(View v) {
-        startActivity(new Intent(this, clothesInformal.class));
-       // if(rb.getId() == "Formal"){
-      //      startActivity(new Intent(this, clothesFormal.class));
-      //  }
-      //  else if(rb.getText() == "Informal") {
-       //     startActivity(new Intent(this, clothesInformal.class));
-       // }
-       // else if(rb.getText() == "Business Casual") {
-     //       startActivity(new Intent(this, clothesCasual.class));
-      //  }
+
+        if(i == 1) {
+            startActivity(new Intent(this, clothesFormal.class));
+        }
+        else if(i == 2) {
+            startActivity(new Intent(this, clothesInformal.class));
+        }
+        else if(i == 3) {
+            startActivity(new Intent(this, clothesCasual.class));
+        }
     }
 
     public void goToWeather(View v) {

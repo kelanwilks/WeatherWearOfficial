@@ -1,6 +1,7 @@
 package com.example.kelan.weatherwear;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,7 @@ import android.widget.Toast;
 
 public class clothesInformal extends AppCompatActivity {
     int num = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +70,36 @@ public class clothesInformal extends AppCompatActivity {
 
             Button btn = (Button) findViewById(R.id.save);
 
-            Toast.makeText(getBaseContext(),btn.getText(),Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Outfit Saved!",Toast.LENGTH_LONG).show();
         }
+
+        public void hyperLinkOnClickshirt(View v) {
+            Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }
+        public void hyperLinkOnClickpants(View v) {
+        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        }
+        public void hyperLinkOnClickshoes(View v) {
+        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        }
+        public void hyperLinkOnClicksocks(View v) {
+        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+        }
+        public void hyperLinkOnClickbelt(View v) {
+            Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }
+
+
+
 
 }
