@@ -22,7 +22,10 @@
         <activity android:name="com.example.kelan.weatherwear.clothesInformal"></activity>
         <activity android:name="com.example.kelan.weatherwear.clothesCasual"></activity>
         <activity android:name="com.example.kelan.weatherwear.accountSettings"></activity>
+        <activity android:name="com.example.kelan.weatherwear.savedOutfits"></activity>
 
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 </manifest>

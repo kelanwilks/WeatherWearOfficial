@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
@@ -27,7 +28,15 @@ public class WeatherWear extends AppCompatActivity {
     }
 
     public void goToAccount(View v) {
+
         startActivity(new Intent(this,accountSettings.class));
+    }
+
+    public void goToCalendar(View v){
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.android.calendar");
+        if (launchIntent != null) {
+            startActivity(launchIntent);//null pointer check in case package name was not found
+        }
     }
 
 }

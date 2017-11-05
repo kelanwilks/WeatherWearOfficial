@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -28,6 +29,13 @@ public class realtimeWeather_First_page extends AppCompatActivity {
         setContentView(R.layout.activity_realtime_weather_first_page);
         rg = (RadioGroup) findViewById(R.id.typeClothesTest);
         temp = (RadioButton) findViewById(R.id.informal);
+
+        String city = "State College";
+        String state = "PA";
+
+        WebView myWebViewC = (WebView) findViewById(R.id.weatherCurrent);
+        myWebViewC.loadUrl("http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_cond&airportcode=KUNV&ForcedCity="+city+"&ForcedState="+state+"&zip=16801&language=EN\"");
+
     }
 
     public void radioOnClick(View v) {

@@ -18,6 +18,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Location: United States"
+        android:textColor="@android:drawable/checkbox_off_background"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.762"
@@ -67,29 +68,30 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="goToCalendar"
         android:background="@drawable/button_calender"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="0.579" />
 
     <ImageView
         android:id="@+id/profilePic"
         android:layout_width="136dp"
         android:layout_height="128dp"
-        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
         app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145"
+        app:srcCompat="@drawable/chris_headshot" />
 
     <TextView
         android:id="@+id/fullNameActual"
@@ -103,6 +105,7 @@
         android:fontFamily="serif"
         android:inputType="textPersonName"
         android:text="Christopher Thens"
+        android:textColor="@android:drawable/checkbox_off_background"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -123,6 +126,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Age: 19"
+        android:textColor="@android:drawable/checkbox_off_background"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.566"
