@@ -41,6 +41,7 @@
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
     <RadioGroup
+        android:id="@+id/typeClothesTest"
         android:layout_width="187dp"
         android:layout_height="152dp"
         android:layout_marginBottom="8dp"
