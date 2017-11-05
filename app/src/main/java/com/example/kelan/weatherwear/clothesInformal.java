@@ -74,29 +74,64 @@ public class clothesInformal extends AppCompatActivity {
         }
 
         public void hyperLinkOnClickshirt(View v) {
-            Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
+            if(num == 1) {
+                Uri uri = Uri.parse("https://www.duluthtrading.com/store/product/mens-free-swingin-flannel-shirt-52007.aspx?wpc=FBD&tall=N&src=GPSHPMN&gclid=Cj0KCQjwyvXPBRD-ARIsAIeQeoH3sloOclq6klWjTD4xLI5XCfTqjb6oWUWM4r2K3Qdv4YYc5jEgnvQaAn3TEALw_wcB"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+            else {
+                Uri uri = Uri.parse("https://www.google.com/search?rlz=1C1CHZL_enUS704US704&biw=1419&bih=925&tbm=isch&sa=1&ei=nDv-WdCkDsKwjwT1sqiYBQ&q=long+sleeve+shirt+men&oq=long+sleeve+shirt+men&gs_l=psy-ab.3...1672.1672.0.2636.0.0.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..0.0.0....0.O_nkDJ-tvEI#imgrc=FSXp1mWzgxgbWM:"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
         }
         public void hyperLinkOnClickpants(View v) {
-        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
+            if(num == 1) {
+                Uri uri = Uri.parse("http://www.hm.com/us/product/70069?article=70069-B"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+            else {
+                Uri uri = Uri.parse("https://www.mountainkhakis.com/products/mens/bottoms/pants/men-s-original-mountain-pant"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
         }
         public void hyperLinkOnClickshoes(View v) {
-        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
+            if(num == 1) {
+                Uri uri = Uri.parse("https://www.dsw.com/en/us/product/aldo-avellino-boot/400261?activeColor=240"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+            else {
+                Uri uri = Uri.parse("https://www.aliexpress.com/store/product/2015-Fashion-Men-Winter-Shoes-Lace-up-Ankle-Boots-Warm-Cotton-Inside-Street-Motorcycle-Boots-XMX258/915005_32392455022.html"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
         }
         public void hyperLinkOnClicksocks(View v) {
-        Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
+            if(num == 1) {
+                Uri uri = Uri.parse("https://www.lyst.com/clothing/blackcouk-mens-light-brown-cashmere-socks/"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+            else {
+                Uri uri = Uri.parse("https://www.lyst.com/clothing/blackcouk-mens-light-brown-cashmere-socks/"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
         }
         public void hyperLinkOnClickbelt(View v) {
-            Uri uri = Uri.parse("http://www.google.com"); // missing 'http://' will cause crashed
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
+            if(num == 1) {
+                Uri uri = Uri.parse("https://www.google.com/search?rlz=1C1CHZL_enUS704US704&biw=1419&bih=864&tbm=isch&sa=1&ei=Dzz-WbuFJOrTjwSei6_4CA&q=mens+belt+black&oq=mens+belt+black&gs_l=psy-ab.3...1414.5030.0.5409.0.0.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..0.0.0....0.zHDYeWvObJI#imgrc=NPHdIwNzHjz1nM:"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+            else {
+                Uri uri = Uri.parse("https://www.google.com/search?rlz=1C1CHZL_enUS704US704&biw=1419&bih=864&tbm=isch&sa=1&ei=Dzz-WbuFJOrTjwSei6_4CA&q=mens+belt+black&oq=mens+belt+black&gs_l=psy-ab.3...1414.5030.0.5409.0.0.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..0.0.0....0.zHDYeWvObJI#imgrc=NPHdIwNzHjz1nM:"); // missing 'http://' will cause crashed
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
         }
 
 
