@@ -22,17 +22,4 @@ public class clothesInformal extends AppCompatActivity {
         setContentView(R.layout.clothes_find_informal);
     }
 
-    private void createRadioButtons() {
-        RadioGroup group = (RadioGroup) findViewById(R.id.typeClothesTest);
-
-        RadioButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(clothesInformal.this, "You Clicked", Toast.LENGTH_SHORT)
-                        .show();
-            }
-        })
-
-    }
-
 }

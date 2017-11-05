@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.kelan.weatherwear.realtimeWeather_First_page">
 
     <Button
@@ -65,6 +66,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Formal"
+            android:onClick="radioOnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.873"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -81,6 +83,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Informal"
+            android:onClick="radioOnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.865"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -97,6 +100,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Business Casual"
+            android:onClick="radioOnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.938"
             app:layout_constraintLeft_toLeftOf="parent"
