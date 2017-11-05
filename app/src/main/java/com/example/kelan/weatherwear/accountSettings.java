@@ -59,7 +59,6 @@ public class accountSettings extends AppCompatActivity {
         editor.apply();
 
         Toast.makeText(this, "Info Saved", Toast.LENGTH_SHORT).show();
-        displayData(view);
     }
 
 

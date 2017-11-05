@@ -29,7 +29,7 @@ public class clothesInformal extends AppCompatActivity {
     }
 
     public void goToWeatherPage(View v) {
-        startActivity(new Intent(this, realtimeWeather_First_page.class));
+        startActivity(new Intent(this, WeatherWear.class));
     }
 
     public void clickbtnRandomize(View v) {
