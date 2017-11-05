@@ -39,6 +39,6 @@ public class realtimeWeather_First_page extends AppCompatActivity {
     }
 
     public void goToformal(View v) {
-        startActivity(new Intent(this, clothesFormal.class));
+        startActivity(new Intent(this, clothesInformal.class));
     }
 }
