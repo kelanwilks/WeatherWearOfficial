@@ -29,12 +29,12 @@ public class clothesInformal extends AppCompatActivity {
     }
 
     public void clickbtnRandomize(View v) {
-        if(num == 1) {
+        if (num == 1) {
             ImageView image = (ImageView) findViewById(R.id.shirt);
             image.setImageResource(R.drawable.walmart_longsleeve_shirt);
 
             ImageView image1 = (ImageView) findViewById(R.id.pants);
-            image1.setImageResource(R.drawable.mountainkhakies_tan);
+            image1.setImageResource(R.drawable.mountainkhackies_tan);
 
             ImageView image2 = (ImageView) findViewById(R.id.belt);
             image2.setImageResource(R.drawable.khols_blackbelt);
@@ -46,9 +46,7 @@ public class clothesInformal extends AppCompatActivity {
             image4.setImageResource(R.drawable.alexpress_shoes);
 
             num++;
-        }
-
-        else {
+        } else {
             ImageView image = (ImageView) findViewById(R.id.shirt);
             image.setImageResource(R.drawable.deluthtrading_redshirt);
 
@@ -65,11 +63,12 @@ public class clothesInformal extends AppCompatActivity {
             image4.setImageResource(R.drawable.dsw_boot);
             num--;
         }
-
-
-
-
-
     }
+        public void btnSaveLoadout(View v) {
+
+            Button btn = (Button) findViewById(R.id.save);
+
+            Toast.makeText(getBaseContext(),btn.getText(),Toast.LENGTH_LONG).show();
+        }
 
 }

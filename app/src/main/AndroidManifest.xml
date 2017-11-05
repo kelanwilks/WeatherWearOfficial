@@ -20,6 +20,7 @@
         <activity android:name="com.example.kelan.weatherwear.clothesFormal"></activity>
         <activity android:name="com.example.kelan.weatherwear.WeatherWear"></activity>
         <activity android:name="com.example.kelan.weatherwear.clothesInformal"></activity>
+        <activity android:name="com.example.kelan.weatherwear.clothesCasual"></activity>
 
     </application>
 
